@@ -1,0 +1,96 @@
+/* ! Global ! */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    border:0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    /* The background positioning styles are from https://github.com/mohammedlahboub/Profile-card-component/blob/main/css/styles.css */
+    background-image: url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 60vw bottom 39vh, left 60vw top 39vh;
+    /* All credits go to @mohammedlahboub | https://www.frontendmentor.io/solutions/solution-for-profile-card-component-with-my-custom-theme-nK0RrhZBbi */
+}
+/* ? Container ? */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas: 
+    "top"
+    "middle"
+    "bottom";
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    height: 400px;
+}
+/* ? Top ? */
+.top {
+    grid-area: top;
+    overflow: hidden;
+}
+/* ? Middle ? */
+.middle {
+    grid-area: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.middle .profile-image {
+    position: absolute;
+    top: -100px;
+    border-radius: 50%;
+    border: 4px white solid;
+}
+.middle .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-top: 1.1rem;
+}
+.middle .name .age {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.middle .location {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.bottom {
+    border-top: 1px solid hsla(0, 0%, 59%, 0.5);
+    grid-area: bottom;
+}
+.bottom .stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+}
+.bottom .stat {
+    text-align: center;
+}
+.bottom .stat .statistic {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 18px;
+}
+.bottom .stat .statistic-label {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 14px;
+}
