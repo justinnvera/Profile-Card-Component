@@ -29,8 +29,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ/hub/profile-card-component-css-flexbox-and-grid-B-KtvrgRLC)
+- Live Site URL: [Vercel](https://profile-card-component-psi-wine.vercel.app)
 
 ### Built with
 
